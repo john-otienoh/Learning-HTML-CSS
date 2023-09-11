@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles_survey.css">
+	<title>survey-form.freecodecamp.rocks</title>
+	<meta name="author" content="John Charles">
+	<meta name="description" content="just a basic survey form replica">
+	<style>
+		h1 {
+			text-align: center;
+			color: white;
+			}
+		p {
+			color: white;
+			}
+		body {
+			background-color: darkslateblue;
+			font-family: calibri;
+			font-size: 20px;
+			}
+		fieldset {
+			width: 700px;
+			margin: auto;
+			background-color: #212741;
+			}
+		textarea {
+			background-color: white;
+			width: 680px;
+			height: 100px;
+			}
+		button {
+			width: 690px;
+			height: 30px;
+			background-color: #126d2e;
+			color: white;
+			}
+	</style>
+</head>
+<body>
+	<h1 id="title"><b>freeCodeCamp Survey Form</b></h1>
+	<p id="description" style="text-align: center; margin-top: 5px;" ><i>Thank you for taking the time to help us improve the platform</i></p>
+	<fieldset>
+		<form action="D:\web-development\User Details.txt\get" method="get">
+			<p>
+				<label for="name"><b>Name</b></label><br>
+				<input style="width:680px;" autofocus id="name" type="text" placeholder="Enter your name" required autocomplete="on"/>
+			</p>
+			<p>
+				<label for="email"><b>Email</b></label><br>
+				<input style="width:680px;" id="email" type="email" placeholder="Enter your Email" required />
+			</p>
+			<p>
+				<label for="age"><b>Age(optional)</b></label><br>
+				<input style="width:680px;" id="age" type="number" placeholder="Age" min="10"max="100" step="1"/>
+			</p>
+			<p>
+				<label for="role"><b>Which option best describes your current role?</b><br></label>
+					<select style="width:680px;" id="role">
+						<option value="1">Select an option</option>
+						<option value="2">Select an option</option>
+						<option value="3">Select an option</option>
+						<option value="4">Select an option</option>
+						<option value="5">Select an option</option>
+					</select>
+			</p>
+			<p>
+				<label for="rad-ios"><b>Would you recommend freeCodeCamp to a friend?</b></label><br>
+					<label><input id="rad-ios" type="radio" name="rad-ios"/>Definitely</label><br>
+					<label><input id="rad-ios" type="radio" name="rad-ios"/>Maybe</label><br>
+					<label><input id="rad-ios" type="radio" name="rad-ios"/>Not sure</label><br>
+			</p>
+			<p>
+				<label for="feature"><b>What is your favorite feature of freeCodeCamp?</b><br></label>
+					<select style="width:680px;" id="feature">
+						<option value="1">Select an option</option>
+						<option value="2">Select an option</option>
+						<option value="3">Select an option</option>
+						<option value="4">Select an option</option>
+						<option value="5">Select an option</option>
+					</select>
+			</p>
+			<p>
+				<label for="checkboxs"><b>What would youlike to see improved? (Check all that apply)</b><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Front-end Projects</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Back-end Projects</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Data Visualization</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Challenges</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Open Source Community</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Gitter help rooms</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Videos</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />City Meetups</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Wiki</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Forum</label><br>
+					<label><input id="checkboxs" name="checkboxs" type="checkbox" />Additional Courses</label><br>
+				</label>
+			</p>
+			<p>
+				<label for="comment_box"><b>Any comments or suggestions?<b><br>
+					<textarea id="comment_box"placeholder="Enter your comment here..."></textarea><br>
+				</label>
+			</p>
+			<p>
+				<button type="submit">Submit</button>
+			</p>
+		</form>
+	</fieldset>
+  </body>
+</html>

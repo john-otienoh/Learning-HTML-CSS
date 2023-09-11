@@ -1,0 +1,85 @@
+body {
+	background: no-repeat url(bike-logo2.jpg);
+	background-size: cover;
+}
+#img {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+p {
+	font: bold 1.1em 'Segoe UI', Tahoma, sans-serif; 
+	direction: ltr;
+	color: white;
+	text-align: center;
+}
+#wh {
+	color: #F0F8FF;
+}
+#co{
+	color: #F5F5F5;
+}
+#or { 
+	color: #FF4500;
+}
+#gr {
+	color: #2E8B57;
+}
+#h2 {
+	text-align: center;
+	font: bold 2em 'Segoe UI', Tahoma, sans-serif;
+	color: white;
+}
+h1 {
+	font: bold 3em 'Segoe UI', Tahoma, sans-serif;
+	text-align: center;
+}
+fieldset {
+	margin: 0 auto;
+	width: 70%;
+	border: 1px solid black;
+}
+input {
+	width: 98%;
+	color: black;
+	background-color: white;
+	margin: 0 auto;
+	height: 30px;
+}
+label {
+	font: bold 2em 'Segoe UI', Tahoma, sans-serif;
+        color: white;
+}
+button {
+	width: 20%;
+	height: 30px;
+	text-align: center;
+	background-color: #2E8B57;
+	margin: 0 auto;
+	border: 1px solid black;
+	font: bold 'Segoe UI', Tahoma, sans-serif;
+}
+#forgot {
+	font: bold 0.5em 'Segoe UI', Tahoma, sans-serif;
+        color: white;
+}
+a:visited {
+	color: #696969;
+}
+a:active {
+        color: #008000;
+}
+a:hover {
+        color: #FF0000;
+}
+#center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#right {
+	display: flex;
+        justify-content: center;
+        align-items: center;
+}
