@@ -1,0 +1,35 @@
+/*These CSS rules apply to the tribute.html webpage*/
+#image {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 1%;
+}
+#title, #tribute-info {
+        font: bold 2rem Arial, sans-serif;
+        color: black;
+}
+#img-caption {
+        text-align: center;
+        font-family: Arial, sans-serif;
+}
+#tribute-page {
+        background-color: #ffe4c4;
+}
+#tribute-link:active {
+        color: blue;
+}
+#tribute-link:visited {
+        color: grey;
+}
+#tribute-link:visited {
+        color: red;
+}
+#tribute-list li {
+        font: 1.1rem Arial, sans-serif;
+}
+#tribute-reference {
+        font: bold 1.1rem Arial, sans-serif;
+}
+/*End*/

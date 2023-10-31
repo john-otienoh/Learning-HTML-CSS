@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="CSS-files/documentation.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>C Documentation</title>
+	</head>
+	<body id="c-page">
+		<main id="main-doc">
+				<nav id="navbar">
+					<header id="C-Documentation">C Documentation</header>
+					<ul>
+						<li><a href="#introduction" class="nav-link">Introduction</a></li>
+						<li><a href="#pre-information" class="nav-link">What you should already know</a></li>
+						<li><a href="#comparision" class="nav-link">C and C++</a></li>
+						<li><a href="#control-structures" class="nav-link">Control Structures in C</a></li>
+						<li><a href="#if" class="nav-link">If Statement</a></li></li>
+						<li><a href="#if-else" class="nav-link">If...Else Statement</a></li>
+						<li><a href="#nested-if" class="nav-link">Nested If Statement</a></li>
+						<li><a href="#switch-case" class="navlink">Switch Case Statement</a></li>
+						<li><a href="#while-loop" class="nav-link">While Loop</a></li>
+						<li><a href="#do-while-loop" class="nav-link">Do...While Loop</a></li>
+						<li><a href="#for-loop" class="nav-link">For Loop</a></li>
+						<li><a href="#nested-loop" class="nav-link">Nested Loops</a></li>
+						<li><a href="#break" class="nav-link">Break Statement</a></li>
+						<li><a href="#continue" class="nav-link">Continue Statement</a></li>
+						<li><a href="#goto" class="nav-link">GOTO Statement</a></li>
+						<li><a href="#loop-type" class="nav-link">Finite and Infinite Loop</a></li>
+						<li><a href="#loop-comparision" class="nav-link">Differences Between While, Do...While and For Loops</a></li>
+					</ul>
+				</nav>
+				<section class="main-section">
+					<header id="intoduction">Introduction</header>
+					<p>C is a high level language introduced by Brian Kerrington and Dennis Ritchie in 1972.<br>It is a modular programming language adjacent to hardware used, therefore it is used to design system software.<br>It is a simpler, safe and a portable language.<br>It is case sensitive i.e(Capital and Small letters are different)</p>
+				</section>
+				<section class="main-section">
+				<header id="pre-information">What you should already know</header>
+				<p>This guide assumes you have the following basic background knowledge on C:</p>
+				<ul>
+					<li>Parts of a C program</li>
+					<li>Constants, Variables, identifiers, keywords and Datatypes</li>
+					<li>Handling Standard Input and Output</li>
+				</ul>
+			</section>
+			<section class="main-section">
+				<header id="comparision">C and C++</header>
+				<p>Both C and C++ similar syntax, compilation process and code structure.<br>C is a structural programming language that was used for system applications and low level programming whereas C++ is an object-oriented programming language</p>
+			</section>
+			<section class="main-section">
+				<header id="control-structures">Control Structures in C</header>
+				<p>They direct the flow of execution in the program.<br>According to ANSI-C programming language there are 3 types of control structures</p>
+				<ol>
+					<li>Decision Control Structure</li>
+					<ul>
+						<li>If Statements</li>
+						<li>If...Else Statement</li>
+						<li>Nested if...else Statement</li>
+						<li>Switch Case statement</li>
+					</ul>
+					<li>Looping Control Structure</li>
+					<ul>
+						<li>For Loop</li>
+						<li>Do.....While Loop</li>
+						<li>While Loop</li>
+						<li>Nested Loops</li>
+					</ul>
+					<li>Jumping Control Structure</li>
+					<ul>
+						<li>Break structure</li>
+						<li>Go to structure</li>
+						<li>Continue structure</li>
+					</ul>
+				</ol>
+			</section>
+			<section class="main-section">
+				<header id="if">If Statement</header>
+				<p>It is a decision control structure that is concerned or considers the true part of the condition.<br>If the condition is true, the program must do something and if it is false it stops</p>
+				<pre>
+				<code>
+					if (condition)
+					{
+						statement 1;
+						statement 2;
+					}
+				</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="if-else">If...Else Statement</header>
+				<P>It is a decision control structure that considers both the true and false part of the program</p>
+                                <p>If the condition is true, the program must do something and if it is false it does something else</p>
+				<pre>
+				<code>
+                                        if (condition)
+                                        {
+                                                statement 1;
+                                                statement 2;
+                                        }
+					else 
+					{
+						statement 1;
+						statement 2;
+					}
+                                </code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="nested-if">Nested If Statement</header>
+				<p>Occurs when an if...else statement is present inside te body of another if or else statement</p>
+				<p>It is useful when a program has to make a series of related decisions</p>
+				<pre>
+				<code>
+                                        if (condition)
+                                        {
+                                                statement 1;
+                                                statement 2;
+                                        }
+					else if (condtion)
+					{
+						statement 1;
+						statement 2;
+					}
+                                        else
+                                        {
+                                                statement 1;
+                                                statement 2;
+                                        }
+                                </code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="switch-case">Switch Case Statement</header>
+				<p>It is used to make unlimited decisions based on the value of a condition i.e it is a simplified version of a nested if...else staement</p>
+				<pre>
+				<code>
+					switch (condition)
+					{
+						case 1: statement 1;
+						case 2: statement 2;
+						case 3: statement 3;
+						default: statement 4;
+					}
+				</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="while-loop">While Loop</header>
+				<p>It is an entry loop i.e the condition is first checked before execeution of the statement</p>
+				<p>The condition is repeatedly executed while it is still logically true.</p>
+				<pre>
+				<code>
+					while (condition)
+					{
+						statement 1;
+						statement 2;
+					}
+				</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="for-loop">For Loop</header>
+				<p>It is a loop that is used to repeat a block of statement a number of times that is known in advance</p>
+				<p>It is an entry loop i.e the condition is first checked before execeution of the statement</p>
+				<pre>
+				<code>
+					for (initialization; condition; increament/decreament)
+					{
+						statement 1;
+						statement 2;
+					}
+				</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="do-while-loop">Do...While Loop</header>
+				<p>It is an example of an exit loop i.e it executes the statement inside the do block atleast once before checking the condtion</p>
+				<pre>
+				<code>
+					do {
+						statement 1;
+						statement 2;
+					}while (condition);
+				</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="nested-loop">Nested Loops</header>
+				<p>It occurs when we have a loop inside another loop</p>
+				<pre>
+				<code>
+					for (initialization; condition; increament/decreament)
+                                        {
+						for (initialization; condition; increament/decreament)
+                                        	{
+                                                	statement 1;
+                                                	statement 2;
+                                        	}
+                                        
+                                        }
+				</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="break">Break Statement</header>
+				<p>It is mainly used to exit the switch case entirely after each case label</p>
+				<p>Can also be used to break loops.</p>
+				<pre>
+					<code>
+                                        switch (condition)
+                                        {
+                                                case 1: statement 1;
+							break;
+                                                case 2: statement 2;
+							break;
+                                                case 3: statement 3;
+							break;
+                                                default: statement 4;
+							break;
+                                        }
+                	</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="continue">Continue Statement</header>
+				<p>It transfers control of execution to the beginning or end of the loop.</p>
+				<p>There are times when you want to stay in a loop but skip over some statement within a loop instead of breaking the loop, we can use a continue statement</p>
+				<p>When you put the continue keyword in a for loop, execution jumps to the update expression (i++ in the example):</p>
+				<pre>
+					<code>
+						for (var i = 0; i < 3; i++) {
+							if (i === 1) {
+							continue;
+							}
+							printf("%d", i);
+						}
+					</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="goto">GOTO Statement</header>
+				<p>A goto statement is used to </p>
+				<pre>
+				<code>
+					label name://it is an identifier that tells the goto statement where to jump
+						statement 1;
+						statement 2;
+						statement 3;
+					goto label name;
+				</code>
+				</pre>
+			</section>
+			<section class="main-section">
+				<header id="loop-type">Finite and Infinite Loop</header>
+				<p><u>A Finite Loop</u> - A loop that is terminated when the condition is false.<br>It has either an increament/decreament operator or a break statement</p>
+				<p><u>An infinite Loop</u> - An infinite loop is one in which the conditional expression is left out entirely thus is upto the code inside the loop to determine the conditions for ending the loop</p>
+			</section>
+			<section class="main-section"> 
+				<header id="loop-coparision">Differences Between While, Do...While and For Loops</header>
+				<table>
+					<thead>
+						<tr>
+							<th>For Loop</th>
+							<th>While Loop</th>
+							<th>Do...While Loop</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>It is an entry control loop</td>
+							<td>It is an entry control loop</td>
+							<td>It is an exit control loop</td>
+						</tr>
+						<tr>
+							<td><pre><code>for (initialization; condition; update)
+								{
+									statement 1;
+								}</code></pre>
+							</td>
+							<td><pre><code>while (condition)
+								{
+									statement 1;
+								}</code></pre>
+							</td>
+							<td><pre><code>do {
+									statement 1;
+								} while(condition);</code></pre>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+	</body>
+</html>

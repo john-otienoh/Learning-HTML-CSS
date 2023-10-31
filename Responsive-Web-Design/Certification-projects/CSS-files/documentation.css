@@ -1,0 +1,80 @@
+/*These CSS rules target the C documentation Page*/ 
+#c-page {
+	background-color: #F0F8FF;
+}
+.main-section header, #C-Documentation {
+	color: black;
+	text-align: left;
+	font: bold 1.8rem 'Open Sans', Arial, sans-serif;
+	text-decoration: underline black;
+}
+.main-section p, li {
+	font: 1.0rem Arial, sans-serif;
+}
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	min-width: 290px;
+}
+#navbar ul {
+	height: 88%;
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#navbar li {
+	color: #4d4e53;
+	border-top: 1px solid;
+	list-style: none;
+	position: relative;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#navbar a {
+	display: block;
+	padding: 10px 30px;
+	color: #4d4e53;
+	text-decoration: none;
+	cursor: pointer;
+}
+#main-doc {
+	position: absolute;
+	padding: 20px;
+	margin-left: 310px;
+	margin-bottom: 110px;
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;/*Prevents the Overlapping!!*/
+  position: relative;
+  background-color: #F0E68C;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 205px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    }
+}

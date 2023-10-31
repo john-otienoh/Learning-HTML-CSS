@@ -1,0 +1,50 @@
+/*This CSS rules targets the survey-form.html webpage*/
+#title, #description {
+	text-align: center;
+	color: white;
+	font: bold Arial, sans-serif;
+}
+.survey-project {
+	background-color: darkslateblue;
+}
+.fieldset {
+	width: 80%;
+	margin: auto;
+	background-color: #212741;
+}
+#comment-box {
+	background-color: white;
+	width: 97%;
+	height: 100px;
+	margin-bottom: 10px;
+}
+#submit {
+	width: 98%;
+	height: 30px;
+	background-color: #126d2e;
+	color: white;
+}
+#name, #email, #age{
+	width: 97%;
+	height: 25px;
+	margin: 0 auto;
+	color: black;
+	margin-bottom: 10px; 
+}
+#dropdown {
+	width: 98%;
+	height: 25px;
+	margin: 0 auto;
+	background-color: grey;
+	margin-bottom: 10px;
+}
+#radios, #checkboxes {
+	background-color: grey;
+	margin-bottom: 10px;
+}
+#name-label, #email-label, #number-label, #role-label, #radio-label, #feature-label, #check-label, #comment-label {
+	color: white;
+        font: bold 1.0rem Arial, sans-serif;
+}
+/*End*/
+

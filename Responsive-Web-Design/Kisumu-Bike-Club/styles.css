@@ -1,0 +1,72 @@
+body {
+	background: no-repeat url(bike-logo2.jpg);
+	background-size: cover;
+}
+#color1 {
+	color: #FDF5E6;
+}
+#color2 {
+	color: #FF6347;
+}
+#color3 {
+	color: #2E8B57;
+}
+img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+}
+h1 {
+        text-align: center;
+        font: bold 3.2em 'Segoe UI', Tahoma, sans-serif;
+        color: #FFF;
+}
+h2 {
+        text-align: center;
+        font: bold 1.5em 'Segoe UI', Tahoma, sans-serif;
+        color: #FFF;
+}
+input {
+        border-radius: 10px;
+        width: 100%;
+        color: black;
+        background-color: white;
+        height: 30px;
+}
+button {
+        width: 30%;
+        height: 30px;
+        text-align: center;
+        background-color: #2E8B57;
+        border: 1px solid black;
+        font: bold 'Segoe UI', Tahoma, sans-serif;
+        border-radius: 10px;
+}
+p, legend {
+        text-align: center;
+        font: bold 1.1em 'Segoe UI', Tahoma, sans-serif;
+        color: #fff;
+}
+fieldset {
+	width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+	background-color: #2F4F4F;
+}
+label {
+        font: bold 1.1em 'Segoe UI', Tahoma, sans-serif;
+        color: white;
+}
+.center {
+        width: 90%;
+        height: 600px;
+	justify-content: center;
+	gap: 30px;
+	background-color: #000;
+        border: 2px solid #FFF;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: center;
+	border-radius: 10px;
+}

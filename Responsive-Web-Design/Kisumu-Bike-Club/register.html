@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        	<meta name="author" content="otienohjohncharles@gmail.com">
+        	<meta name="description" content="Kisumu Bike Club Register Page">
+        	<title>Login Page</title>
+        	<link rel="icon" href="bike-logo.jpg" type="image/jpg">
+        	<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="center">
+			<div>
+				<h1><span id="color1">KISUMU</span><span id="color2"> BIKE</span><span id="color3"> CLUB</span></h1>
+				<h2>Two Wheels Move The Soul</h2>
+				<img src="bike-logo.jpg" alt="kisumu bike club logo">
+			</div>
+			<div>
+				<form action="navigation/homepage.html" method="get">
+				<fieldset>
+					<legend>REGISTER</legend>
+					<label for="name">NAME<br />
+						<input type="text" id="name" placeholder="Enter Your Name" required> <br />
+					</label>
+					<label for="username">USERNAME<br />
+                                                <input type="text" id="username" placeholder="Enter Your Username" required><br />
+                                        </label>
+                                        <label for="email">EMAIL<br />
+                                                <input type="email" id="email" placeholder="Enter Your Email Address" required><br />
+                                        </label>
+                                        <label for="password">PASSWORD<br />
+                                                <input min="8" max="16"type="password" id="password" placeholder="Enter Your Password" required><br />
+                                        </label>
+                                        <label for="confirm-password">CONFIRM PASSWORD<br />
+                                                <input type="password" minlength="8" maxlength="16" id="confirm-password" placeholder="Re-enter Your Password" required><br />
+                                        </label>
+					<button type="submit">SIGN IN</button>
+				</fieldset>
+				</form>
+			</div>
+		</div>
+		<p>&copy;2023</p>
+	</body>
+</html>

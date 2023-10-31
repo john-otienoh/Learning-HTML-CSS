@@ -39,8 +39,10 @@ fieldset {
 	margin: 0 auto;
 	width: 70%;
 	border: 1px solid black;
+	border-radius: 10px;
 }
 input {
+	border-radius: 10px;
 	width: 98%;
 	color: black;
 	background-color: white;
@@ -59,6 +61,7 @@ button {
 	margin: 0 auto;
 	border: 1px solid black;
 	font: bold 'Segoe UI', Tahoma, sans-serif;
+	border-radius: 10px;
 }
 #forgot {
 	font: bold 0.5em 'Segoe UI', Tahoma, sans-serif;
