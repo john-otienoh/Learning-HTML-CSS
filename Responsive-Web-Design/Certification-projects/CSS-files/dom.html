@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-heading">Favourite Movie Franchise</h1>
+        <ul>
+            <li class="list-items">The Matrix</li>
+            <li class="list-items">Star Wars</li>
+            <li class="list-items">Harry Potter</li>
+            <li class="list-items">Lord of the Rings</li>
+            <li class="list-items">Marvel</li>
+        </ul>
+    </div>
+    <script>
+        //getElementById()
+        const heading = document.getElementById('main-heading');
+        console.log(heading);
+        //getElementByClassName
+        const listItems = document.getElementsByClassName('list-items');
+        console.log(listItems);
+        //getEementsByTagName
+        const tagItems = document.getElementsByTagName('div');
+        console.log(tagItems)
+        //querySelector()
+        const container = document.querySelector('.container');
+        console.log(container)
+        //querySelectorAll()
+        const div = document.querySelectorAll('li')
+        console.log(div)
+        //CSS stylings
+        heading.style.color = 'red'
+        heading.style.fontWeight = 'bold'
+        for(var i = 0; i < div.length; i++){
+            div[i].style.color = 'green';;
+        }
+        //Creating Elements
+        const ul = document.querySelector('ul');
+        const li = document.createElement('li');
+        //Adding Elemnets inside a HTML document
+        ul.append(li);
+        //Modify the text
+        const firstListItem = document.querySelector('.list-items')
+        console.log(firstListItem.innerText);
+        console.log(firstListItem.textContent);
+        console.log(firstListItem.innerHTML);
+        li.innerText = 'Prison Break';
+        //Modifying Attributes
+        li.setAttribute('class', 'list-items')
+        const title = document.querySelector('#main-heading');
+        console.log(title.getAttribute('id'))
+        //Remove Attribute
+        li.removeAttribute('class')
+        //Modify Class
+        li.classList.add('list-items');
+        //Remove Classes
+        li.classList.remove('list-items')
+        //Remove Elements
+        li.remove()
+        //Traversing the DOM
+        //1)Parent Node Traversal
+        const ulParent = document.querySelector('ul')
+        console.log(ulParent.parentElement)
+        console.log(ulParent.parentNode)
+        //2)Child Node Traversal
+        const ulChild = document.querySelector('ul')
+        console.log(ulChild.childNodes)
+        //3)Sibling Node Traversal
+        const ulSibling = document.querySelector('ul')
+        console.log(ulSibling.previousSibling)
+        console.log(ulSibling.nextElementSibling)
+    </script>
+</body>
+</html>

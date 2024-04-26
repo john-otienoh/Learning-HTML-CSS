@@ -1,0 +1,23 @@
+body { 
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: bold 30px Helevetica, sans-serif; 
+    text-align: center;
+}
+.container {
+    border-radius: 16px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+button {
+    background-color: lawngreen;
+    font: bold 1.0rem Helevetica, sans-serif;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+h1 {
+    color: goldenrod;
+}

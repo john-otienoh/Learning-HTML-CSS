@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Event Listeners</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+        .box-one, .box-two, .box-three{
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 10px;
+            height: 100px;
+            padding: 10px;
+        }
+        .reveal-hidden{
+            display: none;
+        }
+        .reveal-hidden.reveal-btn{
+            display: block;
+        }
+        .reveal-btn{
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: auto;
+        }
+        .btn-one, .btn-two, .btn-three{
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: auto;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+    <div class="container">
+        <div class="box-one">
+            <h2 id="heading">Example 1</h2>
+            <button class="btn-one" onclick="alert('I love Javascript')">Enter</button>
+        </div>
+        <div class="box-two">
+            <h2 id="heading">Example 2</h2>
+            <button class="btn-two">Enter</button>
+        </div>
+        <div class="box-three">
+            <h2 id="heading">Example 3</h2>
+            <button class="btn-three">Enter</button>
+        </div>
+    </div>
+    <div class="container-two">
+        <h1 id='heading-two'>Creating a Reveal/ Hide Button</h1>
+        <button class="reveal-btn">REVEAL MORE</button>
+        <div class="reveal-hidden">
+            Compile using GCC<br />
+            GCC (GNU Compiler Collection) is a widely used C compiler. To use it, open a terminal, use the command line to navigate to the source file's location and then run: gcc hello.c -o hello.
+            If no errors are found in the the source code (hello.c), the compiler will create a binary file, the name of which is given by the argument to the -o command line option (hello). This is the final executable file.
+            We can also use the warning options -Wall -Wextra -Werror, that help to identify problems that can cause the
+program to fail or produce unexpected results. They are not necessary for this simple program but this is way of
+adding them:<br />
+            gcc -Wall -Wextra -Werror -o hello hello.c
+        </div>
+    </div>
+    <div class="container-three">
+        <h1 id="'heading-three">Event Delegation</h1>
+        <ul id="sports">
+            <li id="football">Football</li>
+            <li id="basketball">Basketball</li>
+            <li id="tennis">Tennis</li>
+            <li id="golf">Golf</li>
+        </ul>
+    </div>
+    
+    <script>
+        //Event Listeners - element.addEventListeners("click", function)
+        const buttonTwo = document.querySelector('.btn-two')
+        function alertBtn(){
+            alert('Hello John');
+            buttonTwo.innerText = 'clicked';
+        }
+        buttonTwo.addEventListener("click", alertBtn)
+        //Mouseover
+        const buttonThree = document.querySelector('.box-three')
+        function changeBgColor(){
+            buttonThree.style.backgroundColor = 'blue'
+        }
+        buttonThree.addEventListener('mouseover', changeBgColor)
+        //Reveal Button
+        const revealBtn = document.querySelector('.reveal-btn')
+        const hiddenBtn = document.querySelector('.reveal-hidden')
+        function revealContent(){
+            if (hiddenBtn.classList.contains('reveal-btn')){
+                hiddenBtn.classList.remove('reveal-btn')
+            }else{
+                hiddenBtn.classList.add('reveal-btn')
+            }
+        }
+        revealBtn.addEventListener('click', revealContent)
+        //
+        document.querySelector('#football').addEventListener('click', function(e)
+        {
+            console.log('Football is clicked');
+            const target = e.target;
+            if (target.matches('li')){
+                target.style.backgroundColor = 'red';
+            }
+        })
+        //Events Delegation
+        document.querySelector('#sports').addEventListener('click', function(e){
+            console.log(e.target.getAttribute('id') + 'is clicked')
+            const target = e.target;
+            if (target.matches('li')){
+                target.style.backgroundColor = 'red';
+            }
+        })
+    </script>
+</body>
+</html>

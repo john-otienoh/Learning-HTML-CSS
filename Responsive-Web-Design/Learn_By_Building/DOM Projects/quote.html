@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(209, 168, 91);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="heading-one">Javascript Quote Generator</h1>
+        </div>
+        <div class="main-content">
+            <div class="text-area"><span id="text"></span></div>
+        </div>
+        <div class="person"></div>
+        <div class="button-area">
+            <button id="button">New Quote</button>
+        </div>
+    </div>
+    <script>
+        let button = document.querySelector('#button');
+        let person = document.querySelector('.person')
+        let text = document.querySelector('#text')
+        const quotes = [{
+            quote: 'Hello John',
+            person: 'johnte'},
+        {
+            quote: 'Hello Jane',
+            person: 'jane'
+        }]
+        button.addEventListener('click', function(){
+            let randomQuote = Math.floor(Math.random() * quotes.length)
+            text.innerText = quotes[randomQuote].quote
+            person.innerText = quotes[randomQuote].person
+        })
+    </script>
+</body>
+</html>

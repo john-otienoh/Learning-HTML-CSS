@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
+    <title>portal.mu.ac.ke</title>
+    <link rel="stylesheet" href="./portal.css" type="text/css">
+    <link rel=" icon" href="moi.png">
+</head>
+<body>
+    <div class="container">
+        <form class="login" method="post" action="Dashboard.html">
+            <hr />
+            <label for="registration"><br />
+                Reg. Number
+                <input id="registration" type="text" placeholder="Reg. Number" required>
+            </label><br />
+            <label for="password">
+                Password<br />
+                <input id="password" type="password" placeholder="Password" required>
+                <i class="bx bx-lock-alt input__lock"></i>
+            </label><br />
+            <label for="remember-me">
+                <input id="remember-me" type="checkbox">Remember me
+            </label><br />
+            <button id='btn-one' type="submit">Login</button>
+            <hr />
+        </form>
+        <button id="btn-two" type="submit">Log in via ECitizen</button><br />
+        <a href="www.gmail.com" id="forgot-password">Forgot your Password</a>
+    </div>
+    <footer>
+        <p>An ISO 9001: 2015 Certified Institution</p>
+        <p>2023 &copy; Designed by <a href='dsl.ke'>DSL Systems</a></p>
+    </footer>
+    <script src="portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    overflow: hidden;
+    font: bold 1.0rem Arial, sans-serif;
+}
+.container {
+    background-color: darkgreen;
+    margin: 20px;
+    padding: 20px;
+}
+footer {
+    background-color: #212741;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    color: antiquewhite;
+}
+#password, #registration{
+    height: 20px;
+    width: 99%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+label {
+    color: antiquewhite;
+}
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: red;
+}
+a:link {
+    color: darkviolet
+}
+#btn-one {
+    background-color: dodgerblue;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+}
+#btn-two {
+    background-color: mediumspringgreen;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;   
+}

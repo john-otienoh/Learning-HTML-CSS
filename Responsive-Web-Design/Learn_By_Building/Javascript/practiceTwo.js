@@ -1,0 +1,17 @@
+let x = Math.floor(Math.random() * 100 + 1);
+let y = Math.floor(Math.random() * 50 + 1);
+const sum = x + y; 
+let sumOutput = `${x} + ${y} = ${sum}`;
+const sub = x - y;
+let differenceOutput = `${x} - ${y} = ${sub}`;
+const mul = x * y;
+let productOutput = `${x} * ${y} = ${mul}`;
+const div = x / y;
+let quotientOutput = `${x} / ${y} = ${div}`;
+const rem = x % y;
+let rmOutput = `${x} % ${y} = ${rem}`;
+console.log(sumOutput);
+console.log(differenceOutput);
+console.log(productOutput);
+console.log(quotientOutput);
+console.log(rmOutput);
